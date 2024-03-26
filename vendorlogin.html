@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="javascript.js"></script>
+    </head>
+    <body onload=display_ct();>
+        <p id='ct' ></p>   
+        <center>
+            <h1 style="color: turquoise;"><i><big>Student Login</big></i></h1>
+            <hr>
+            <table>
+                <form name="f1" action="success.html" onsubmit="return validate()">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" class="inp" name="t1" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" class="inp" name="t2" required></td>
+                </tr>
+                <tr>
+                    <td>Vendor ID</td>
+                    <td><input type="text" class="inp" name="t3" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" class="inp" name="t4" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><br><br><input type="submit" id="submit"></td>
+                </tr>
+                </form>
+            </table>
+        </center>
+    </body>
+    <style>
+       body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    margin-top: 5px;
+}
+
+    </style>
+</html>
+
+
+
